@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                text-align: center;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="breadcrumbs">
+        <a href="#inicio">Inicio</a> &gt; <a href="#productos">Productos</a> &gt; <span>Detalle del Producto</span>
+    </div>
+    <div class="breadcrumbs">
+        <a href="#inicio">Inicio</a> &gt; <a href="#productos">Productos</a> &gt; <span>Detalle del Producto</span>
+    </div>
+    <form class="formulario">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" name="servicio">
+            <option value="soporte">Soporte</option>
+            <option value="ventas">Ventas</option>
+            <option value="consultas">Consultas</option>
+        </select>
+    
+        <label>
+            <input type="checkbox" name="suscribir" id="suscribir"> Suscribirse al boletín
+        </label>
+    
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Ícono</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="oi oi-star"></span></td>
+                    <td>Producto 1</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td><span class="oi oi-heart"></span></td>
+                    <td>Producto 2</td>
+                    <td>$200</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <style>
+        .tabla-contenedor {
+            max-height: 300px;
+            overflow-y: auto;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    <div class="productos">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Descripción del producto.</p>
+            <footer>$100</footer>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Descripción del producto.</p>
+            <footer>$200</footer>
+        </div>
+        <!-- Más cards -->
+    </div>
+    
+    <style>
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card footer {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+    <div class="banner">
+        <img src="https://via.placeholder.com/1200x300" alt="Banner Promocional">
+    </div>
+    
+    <style>
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <div class="contenedor-principal">
+    
+        <nav>...</nav>
+    
+        <div class="banner">...</div>
+    
+        <div class="breadcrumbs">...</div>
+    
+        <div class="productos">...</div>
+    
+        <div class="tabla-contenedor">...</div>
+
+        <form class="formulario">...</form>
+    </div>
+    
+    <style>
+        .contenedor-principal {
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</body>
+</html>
